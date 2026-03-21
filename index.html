@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KargoKurt</title>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    
+    <div class="logo" onclick="openLogo()">
+    <img src="images/logo.png" alt="logo">
+    <span class="kargo">Kargo</span><span class="kurt">Kurt</span>
+</div>
+
+<!-- POPUP -->
+<div id="logoPopup" class="logo-popup">
+    <span class="close" onclick="closeLogo()">✖</span>
+    <img src="images/logo.png" class="popup-img">
+</div>
+
+
+    <ul class="nav-links">
+        <li class="active">Home</li>
+        <li><a href="kurta.html">Kurta</a></li>
+        <li><a href="cargos.html">Cargos</a></li>
+    </ul>
+
+    <div class="icons">
+        
+        <span>🔍</span>
+        <span onclick="openCart()">🛒</span>
+         <!-- ORDER HISTORY -->
+    
+    </div>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="hero">
+
+    <div class="hero">
+
+  <img src="images/hero.jpg" class="hero-img">
+
+  <div class="overlay"></div>
+
+  <div class="hero-text">
+    <h1>Shop Latest</h1>
+    <p>Trendy Kurtas & Cargo Styles for You</p>
+    <button>Explore Now</button>
+  </div>
+
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+    <h2 class="section-title">Shop Latest</h2>
+
+    <div class="product-grid">
+
+        <!-- CARD 1 -->
+        <div class="card" onclick="openProduct('Black Kurta',999,'images/black_kurta.jpg','⭐⭐⭐⭐☆')">
+            <div class="img-box">
+                <img src="images/black_kurta.jpg">
+            </div>
+
+            <div class="card-content">
+                <h3>Black Kurta</h3>
+                <p class="price">₹999</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <button onclick="event.stopPropagation(); addToCart('Black Kurta',999,'images/black_kurta.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" onclick="openProduct('Olive Kurta',899,'images/kurta1.jpg','⭐⭐⭐⭐⭐')">
+            <div class="img-box">
+                <img src="images/kurta1.jpg">
+            </div>
+
+            <div class="card-content">
+                <h3>Olive Kurta</h3>
+                <p class="price">₹899</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <button onclick="event.stopPropagation(); addToCart('Olive Kurta',899,'images/kurta1.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" onclick="openProduct('Beige Cargo',799,'images/cargo5.jpg','⭐⭐⭐⭐☆')">
+            <div class="img-box">
+                <img src="images/cargo5.jpg">
+            </div>
+
+            <div class="card-content">
+                <h3>Beige Cargo</h3>
+                <p class="price">₹799</p>
+                <div class="rating">⭐⭐⭐⭐☆</div>
+
+                <button onclick="event.stopPropagation(); addToCart('Beige Cargo',799,'images/cargo5.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" onclick="openProduct('Outfit Combo',1499,'images/cargo6.jpg','⭐⭐⭐⭐⭐')">
+            <div class="img-box">
+                <img src="images/cargo6.jpg">
+            </div>
+
+            <div class="card-content">
+                <h3>Outfit Combo</h3>
+                <p class="price">₹1499</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+
+                <button onclick="event.stopPropagation(); addToCart('Outfit Combo',1499,'images/cargo6.jpg')">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>KargoKurt</h3>
+            <p>Your one-stop shop for stylish kurtas and cargos.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kurta.html">Kurta</a></li>
+                <li><a href="cargos.html">Cargo</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="history.html">History</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: support@kargokurt.com</p>
+            <p>Phone: +91 ______________</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 KargoKurt | All Rights Reserved
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
